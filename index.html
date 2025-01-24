@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with White Background</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Codec+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" width="50px" height="50px">
+        </div>
+        <div class="login-button">
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-part">
+                 <div id="header">
+                    <h1>New Tab - 21 January 2025</h1>
+                    <div id="info-view-container">
+                        <div id="info">
+                            <span>Info Bridge</span>
+                            <span>3 days ago</span>
+                        </div>
+                        <div id="view">
+                            <span>180 views</span>
+                          <div id="btn">  <i class="fa fa-link"  ></i></div>
+                          <i class="fa fa-download" ></i>
+                        </div>
+                    </div>
+                     
+                    <div id="controls">
+                        </div>
+                </div>
+        
+                <div id="browser">
+                     
+                      
+        
+                    <div id="content">
+                        <div id="video-player">
+                            <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" width="100%" autoplay muted  controls></video>
+                            <button class="go-back" onclick="goBack()">Go back</button>
+
+                        </div>
+ 
+        
+                         
+                    </div>
+         
+                <div id="footer">
+                    <div id="reaction-buttons">
+                        <button>&#128512;	
+                        </button> <button>&#128513;	
+                        </button> <button>&#128514;	
+                        </button> <button>&#128515;	
+                        </button> <button>&#128516;	
+                        </button>
+     
+                       
+                    </div>
+                
+                    <button id="comment-button"><i class="fa fa-comment-o" aria-hidden="true"></i>
+                        Comment</button>
+                    </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="changeTab(0)"> Activity</button>
+                    <button class="tab-btn" onclick="changeTab(1)">Transcript </button>
+                     <div class="tab-indicator"></div>  
+                     <div class="right-button">
+                        <button onclick="expandLeftPart()">
+                            <img src="arrow.svg" width="30px" height="30px">
+                        </button>
+                    </div>
+                    
+                </div>
+        
+                <div class="tab-slider">
+                    <div class="tab-content" id="tab1">
+                      <div class="fixed-section">
+                        <div class="commentbox">
+                            <div class="comment-header">
+                                <img src="person.png" class="person-logo">
+                                <p class="hint">Respond to info..</p>
+                            </div>
+                            <div class="comment-footer">
+                                <img src="video.png" class="video-recorder">
+                                <div class="commentat">Comment at 0:00</div>
+                            </div>
+                        </div>
+
+                        <div class="section2">
+                            <p class="comment-count">4 comments</p>
+                            <div class="refresh-wrapper">
+                                <i class="fa fa-refresh"></i>
+                                <p class="refresh">Refresh</p>
+                            </div>
+                        </div>
+                       </div> 
+    
+              <div class="scrollable-section">
+                    <div class="whole">
+                  <div class="scrollablecommentbox">
+                        <img src="pic3.jpg" class="person-logo-comment">
+                             <p class="name">Ali Ahmed</p>
+
+                                   <p class="time">0:00</p>
+                  <p class="day">1d</p>
+                    </div>
+                     <div class="two">
+                            <p class="comment-content">I added a comment </p>
+                         <p class="reply">Reply</p>
+                          </div>
+                     </div>
+                     <div class="whole">
+                        <div class="scrollablecommentbox">
+                              <img src="pic1.jpg" class="person-logo-comment">
+                                   <p class="name">AbdulRehman Mumtaz
+                                </p>
+      
+                                         <p class="time">15:00</p>
+                        <p class="day">1d</p>
+                          </div>
+                           <div class="two">
+                                  <p class="comment-content">Do I have to make the page with the same company name or i can change it and make it by my own </p>
+                               <p class="reply">Reply</p>
+                                </div>
+                           </div>
+        
+                           <div class="whole">
+                            <div class="scrollablecommentbox">
+                                  <img src="pic2.webp" class="person-logo-comment">
+                                       <p class="name">Ali Ahmed</p>
+          
+                                             <p class="time">0:00</p>
+                            <p class="day">1d</p>
+                              </div>
+                               <div class="two">
+                                      <p class="comment-content">I added a comment </p>
+                                   <p class="reply">Reply</p>
+                                    </div>
+                               </div>
+                               <div class="whole">
+                                <div class="scrollablecommentbox">
+                                      <img src="person.png" class="person-logo-comment">
+                                           <p class="name">Ali Ahmed</p>
+              
+                                                 <p class="time">0:00</p>
+                                <p class="day">1d</p>
+                                  </div>
+                                   <div class="two">
+                                          <p class="comment-content">I added a comment </p>
+                                       <p class="reply">Reply</p>
+                                        </div>
+                                   </div>
+                                   
+                                   <div class="whole">
+                                    <div class="scrollablecommentbox">
+                                          <img src="person.png" class="person-logo-comment">
+                                               <p class="name">Ali Ahmed</p>
+                  
+                                                     <p class="time">0:00</p>
+                                    <p class="day">1d</p>
+                                      </div>
+                                       <div class="two">
+                                              <p class="comment-content">I added a comment </p>
+                                           <p class="reply">Reply</p>
+                                            </div>
+                                       </div>
+                                       <div class="whole">
+                                    <div class="scrollablecommentbox">
+                                          <img src="person.png" class="person-logo-comment">
+                                               <p class="name">Ali Ahmed</p>
+                  
+                                                     <p class="time">0:00</p>
+                                    <p class="day">1d</p>
+                                      </div>
+                                       <div class="two">
+                                              <p class="comment-content">I added a comment </p>
+                                           <p class="reply">Reply</p>
+                                            </div>
+                                       </div>
+                                       <div class="whole">
+                                        <div class="scrollablecommentbox">
+                                              <img src="person.png" class="person-logo-comment">
+                                                   <p class="name">Ali Ahmed</p>
+                      
+                                                         <p class="time">0:00</p>
+                                        <p class="day">1d</p>
+                                          </div>
+                                           <div class="two">
+                                                  <p class="comment-content">I added a comment </p>
+                                               <p class="reply">Reply</p>
+                                                </div>
+                                           </div>
+                                           <div class="whole">
+                                            <div class="scrollablecommentbox">
+                                                  <img src="person.png" class="person-logo-comment">
+                                                       <p class="name">Ali Ahmed</p>
+                          
+                                                             <p class="time">0:00</p>
+                                            <p class="day">1d</p>
+                                              </div>
+                                               <div class="two">
+                                                      <p class="comment-content">I added a comment </p>
+                                                   <p class="reply">Reply</p>
+                                                    </div>
+                                               </div>
+                                        
+        </div>
+
+           </div>          
+                    <div class="tab-content" id="tab2">
+                        
+                    </div>
+                   
+                </div>
+                </div>
+                
+            </div>
+            </div>
+            </div>
+
+    </div>
+    <script>
+   let currentTab = 0;
+   function expandLeftPart() {
+    const leftPart = document.querySelector(".left-part");
+    const rightPart = document.querySelector(".right-part");
+    const videoPlayer = document.querySelector("#video-player");
+    const goBackButton = document.querySelector(".go-back");
+
+    
+    leftPart.style.flex = "1";
+
+    rightPart.style.display = "none";  
+     
+    videoPlayer.style.borderLeft = "50px solid black";  
+    videoPlayer.style.borderRight = "50px solid black";
+    videoPlayer.style.borderTop = "none";  
+    videoPlayer.style.borderBottom = "30px solid black"; 
+    goBackButton.style.visibility = "visible";  
+
+ }
+ function goBack() {
+    const leftPart = document.querySelector(".left-part");
+    const rightPart = document.querySelector(".right-part");
+    const videoPlayer = document.querySelector("#video-player");
+    const goBackButton = document.querySelector(".go-back");
+
+     leftPart.style.flex = "2";
+    rightPart.style.flex = "2";
+    
+    rightPart.style.display = "flex";  
+     
+    videoPlayer.style.borderLeft = "none"; 
+    videoPlayer.style.borderRight = "none"; 
+    videoPlayer.style.borderTop = "none"; 
+    videoPlayer.style.borderBottom = "none"; 
+    goBackButton.style.visibility = "hidden";  
+ }
+
+
+ 
+
+
+function changeTab(index) {
+    
+    document.querySelector(".tab-slider").style.transform = `translateX(-${index * 100}%)`;
+
+
+    let tabButtons = document.querySelectorAll(".tab-btn");
+    tabButtons.forEach(btn => btn.classList.remove("active"));
+    tabButtons[index].classList.add("active");
+
+    let tabIndicator = document.querySelector(".tab-indicator");
+    let activeTab = tabButtons[index];
+    tabIndicator.style.width = `${activeTab.offsetWidth}px`; 
+    tabIndicator.style.left = `${activeTab.offsetLeft}px`; 
+
+     currentTab = index;
+
+     let tabContents = document.querySelectorAll(".tab-content");
+    tabContents.forEach((content, idx) => {
+        if (idx === index) {
+            content.classList.remove("hidden");
+            content.classList.add("active");
+        } else {
+            content.classList.remove("active");
+            content.classList.add("hidden");
+        }
+    });
+}
+
+
+
+
+  
+  
+      </script>
+</body>
+</html>
